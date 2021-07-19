@@ -1,7 +1,6 @@
 {
   "store.home": {
     "blocks": [
-      "training-app",
       "list-context.image-list#demo",
       /* You can make references to blocks defined in other files.
        * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
@@ -15,12 +14,7 @@
       "newsletter"
     ]
   },
-  "training-app":{
-    "props":{
-      "name": "Manuel",
-      "age": "25"
-    }
-  },
+
   "list-context.image-list#demo": {
     "children": ["slider-layout#demo-images"],
     "props": {

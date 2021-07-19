@@ -11,6 +11,12 @@
       "product-questions-and-answers"
     ]
   },
+  "training-app#product":{
+    "props":{
+      "name": "Manuel",
+      "age": "25"
+    }
+  },
   "flex-layout.row#specifications-title": {
     "children": ["rich-text#specifications"]
   },
@@ -103,6 +109,7 @@
       "product-rating-summary",
       "flex-layout.row#list-price-savings",
       "flex-layout.row#selling-price",
+      "training-app#product",
       "product-installments",
       "product-separator",
       "product-identifier.product",
