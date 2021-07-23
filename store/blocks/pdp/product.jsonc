@@ -107,6 +107,7 @@
     "children": [
       "flex-layout.row#product-name",
       "product-rating-summary",
+      "flag-last-units",
       "flex-layout.row#list-price-savings",
       "flex-layout.row#selling-price",
       "training-app#product",
