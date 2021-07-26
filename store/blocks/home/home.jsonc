@@ -11,8 +11,20 @@
       "info-card#home",
       "rich-text#question",
       "rich-text#link",
+      "list-context.product-list#Recomendent",
+      "shelf.relatedProducts#basura",
       "newsletter"
     ]
+  },
+  "shelf.relatedProducts#basura": {
+    "blocks": ["product-summary.shelf"],
+    "props": {
+      "recommendation": "viewandBought",
+      "productList": {
+        "titleText": "Vistos recientemente",
+        "itemsPerPage": 3
+      }
+    }
   },
   "list-context.image-list#demo": {
     "children": ["slider-layout#demo-images"],
@@ -57,6 +69,25 @@
     "children": ["slider-layout#demo-products"],
     "props": {
       "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+  "list-context.product-list#Recomendent": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#recomendent-products"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+  "slider-layout#recomendent-products": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 3,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": "shelf"
     }
   },
   "slider-layout#demo-products": {

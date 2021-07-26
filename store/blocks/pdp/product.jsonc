@@ -6,13 +6,24 @@
       "flex-layout.row#description",
       "flex-layout.row#specifications-title",
       "product-specification-group#table",
-      "shelf.relatedProducts",
       "product-reviews",
-      "product-questions-and-answers"
+      "product-questions-and-answers",
+      "shelf.relatedProducts#basura"
     ]
   },
-  "training-app#product":{
-    "props":{
+  "shelf.relatedProducts#basura": {
+    "blocks": ["product-summary.shelf"],
+    "props": {
+      "recommendation": "view",
+      "productList": {
+        "titleText": "Mas vistos",
+        "itemsPerPage": 4
+      }
+    }
+  },
+
+  "training-app#product": {
+    "props": {
       "name": "Manuel",
       "age": "25"
     }
