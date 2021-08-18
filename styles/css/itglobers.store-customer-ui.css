@@ -1,0 +1,120 @@
+/* RENDER APP STYLES */
+.container {
+  /* background-color: red; */
+  width: 65%;
+  margin: 0 auto;
+}
+.columnsWrapper {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+  /* background-color: blueviolet; */
+  margin-bottom: 20px;
+}
+.column1 {
+  grid-column: 1/5;
+}
+.column2,
+.column3 {
+  text-align: center;
+}
+/* ORDER INFO STYLES */
+.orderInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: red; */
+  width: 100%;
+  /* padding: 10px; */
+}
+
+.seller {
+  font-weight: normal;
+}
+
+.warningMessage {
+  font-size: 0.9rem;
+  position: relative;
+  margin-bottom: 60px;
+}
+
+.warningMessage::after {
+  content: '';
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: black;
+}
+.selectMessage {
+  margin-bottom: 50px;
+}
+
+/* ORDER STATE STYLES */
+
+.orderStateWrapper {
+  /* background-color: red; */
+  /* align-self: flex-start; */
+  margin-right: 100px;
+}
+.orderState {
+  margin-left: 10px;
+  padding: 5px 10px;
+  border-radius: 100px;
+  color: white;
+  background-color: black;
+}
+
+/* PRODUCT INFO STYLES */
+
+.productInfoWrapper {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+  /* background-color: blueviolet; */
+  margin-bottom: 20px;
+}
+
+.productImageWrapper {
+  /* background-color: red; */
+  grid-column: 1/2;
+  display: flex;
+}
+.productImage {
+  /* height: 100%; */
+  /* align-self: center; */
+}
+.productInfo {
+  /* background-color: coral; */
+  grid-column: 2/5;
+  margin: auto 0;
+  padding: 0 30px;
+}
+.productSummary {
+  display: flex;
+  /*  justify-content: space-between; */
+  margin-top: 10px;
+  /* background-color: red; */
+}
+.productQuantity {
+  flex: 1;
+}
+.productPrice {
+  flex: 2;
+  text-align: center;
+}
+.productSelect {
+  grid-column: 5/6;
+  /* background-color: aqua; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.productQuantitySelector {
+  grid-column: 6/7;
+  /*  background-color: bisque; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

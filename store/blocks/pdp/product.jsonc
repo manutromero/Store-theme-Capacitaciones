@@ -22,12 +22,12 @@
     }
   },
 
-  "training-app#product": {
+/*   "training-app#product": {
     "props": {
       "name": "Manuel",
       "age": "25"
     }
-  },
+  }, */
   "flex-layout.row#specifications-title": {
     "children": ["rich-text#specifications"]
   },
@@ -118,10 +118,10 @@
     "children": [
       "flex-layout.row#product-name",
       "product-rating-summary",
-      "flag-last-units",
+      /* "flag-last-units", */
       "flex-layout.row#list-price-savings",
       "flex-layout.row#selling-price",
-      "training-app#product",
+     /*  "training-app#product", */
       "product-installments",
       "product-separator",
       "product-identifier.product",
