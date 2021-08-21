@@ -1,31 +1,38 @@
 /* RENDER APP STYLES */
 .container {
-  /* background-color: red; */
   width: 65%;
   margin: 0 auto;
 }
+/* .TableWrapper :global(.vtex-checkbox__line-container),
+.TableWrapper :global(.vtex-checkbox__container),
+.TableWrapper :global(.vtex-checkbox__inner-container),
+.TableWrapper :global(.vtex-checkbox__box-wrapper),
+.TableWrapper :global(.vtex-checkbox__input) {
+  height: 24px;
+  width: 24px;
+
+} */
 .columnsWrapper {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   gap: 10px;
-  /* background-color: blueviolet; */
-  margin-bottom: 20px;
+  margin-top: 20px;
 }
 .column1 {
   grid-column: 1/5;
+  font-weight: bold;
 }
 .column2,
 .column3 {
   text-align: center;
+  font-weight: bold;
 }
 /* ORDER INFO STYLES */
 .orderInfo {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* background-color: red; */
   width: 100%;
-  /* padding: 10px; */
 }
 
 .seller {
@@ -48,14 +55,12 @@
   background-color: black;
 }
 .selectMessage {
-  margin-bottom: 50px;
+  margin-bottom: 25px;
 }
 
 /* ORDER STATE STYLES */
 
 .orderStateWrapper {
-  /* background-color: red; */
-  /* align-self: flex-start; */
   margin-right: 100px;
 }
 .orderState {
@@ -66,36 +71,20 @@
   background-color: black;
 }
 
-/* PRODUCT INFO STYLES */
-
-.productInfoWrapper {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: 10px;
-  /* background-color: blueviolet; */
-  margin-bottom: 20px;
-}
-
+/* PRODUCT DETAIL STYLES */
 .productImageWrapper {
-  /* background-color: red; */
   grid-column: 1/2;
   display: flex;
 }
-.productImage {
-  /* height: 100%; */
-  /* align-self: center; */
-}
+
 .productInfo {
-  /* background-color: coral; */
   grid-column: 2/5;
   margin: auto 0;
-  padding: 0 30px;
+  padding: 0 20px;
 }
 .productSummary {
   display: flex;
-  /*  justify-content: space-between; */
   margin-top: 10px;
-  /* background-color: red; */
 }
 .productQuantity {
   flex: 1;
@@ -104,17 +93,131 @@
   flex: 2;
   text-align: center;
 }
-.productSelect {
+
+/* PRODUCT INFO STYLES */
+
+.productInfoWrapper {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.productSelectWrapper {
   grid-column: 5/6;
-  /* background-color: aqua; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: red; */
+}
+.productSelectWrapper :global(.vtex-checkbox__line-container),
+.productSelectWrapper :global(.vtex-checkbox__container),
+.productSelectWrapper :global(.vtex-checkbox__inner-container),
+.productSelectWrapper :global(.vtex-checkbox__box-wrapper),
+.productSelectWrapper :global(.vtex-checkbox__input) {
+  height: 24px;
+  width: 24px;
+  font-size: 40px;
+}
+
+.productQuantitySelector {
+  grid-column: 6/7;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.productQuantitySelector {
-  grid-column: 6/7;
-  /*  background-color: bisque; */
+
+.productQuantitySelector :global(.vtex-numeric-stepper__input) {
+  width: 100%;
+  border-left: none;
+  border-right: none;
+  /* background-color: red; */
+}
+.productQuantitySelector :global(.vtex-numeric-stepper__plus-button),
+.productQuantitySelector :global(.vtex-numeric-stepper__minus-button) {
+  background-color: white;
+}
+.productQuantitySelector :global(.vtex-numeric-stepper__plus-button__text),
+.productQuantitySelector :global(.vtex-numeric-stepper__minus-button__text) {
+  color: gray;
+  font-size: 24px;
+}
+.productQuantitySelector
+  :global(.vtex-numeric-stepper__plus-button__text):active,
+.productQuantitySelector
+  :global(.vtex-numeric-stepper__minus-button__text):active {
+  color: black;
+}
+/* BUTTON STYLES */
+
+.btn {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 8px 50px;
+  text-align: center;
+  text-decoration: none;
+  /* display: inline-block; */
+  /* font-size: 16px; */
+  /* margin: 4px 2px; */
+  cursor: pointer;
+  border-radius: 50px;
+  float: right;
+}
+
+.btn:hover {
+  background-color: gray;
+}
+
+/* REFUND CASES STYLES */
+.tableRefundCases {
+  margin-top: -15px;
+  flex: 1;
+  margin-right: 70px;
+}
+.reasonWrapper {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  /* justify-content: flex-start; */
+  /* background-color: red; */
+  padding: 20px 0px;
+  border-bottom: 1px solid black;
+}
+.reason {
+  margin-left: 10px;
+}
+
+/* REFUND SHELF STYLES */
+
+.refundShelfWrapper {
+  background-color: beige;
+  margin: 0 auto;
+  padding: 60px 0px 20px 20px;
+  flex: 1;
+  max-height: 350px;
+  overflow: auto;
+  position: relative;
+}
+
+.refundShelfTitle {
+  font-size: 1rem;
+  min-width: 200px;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+}
+.refundShelf {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* margin-bottom: 20px; */
+  padding-bottom: 5px;
+
+  background-color: white;
+}
+
+/* RENDER APP V2 STYLES */
+.refundCases_ProductsWrapper {
+  /* background-color: coral; */
+  display: flex;
+  /* justify-content: center; */
+  width: 120%;
 }
