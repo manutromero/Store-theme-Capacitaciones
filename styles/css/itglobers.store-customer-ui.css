@@ -287,6 +287,10 @@
   padding-right: 5px;
 }
 
+.refundCases_ProductsWrapper {
+  display: flex;
+  width: 120%;
+}
 /* RESPONSIVE */
 
 @media only screen and (max-width: 1300px) {
