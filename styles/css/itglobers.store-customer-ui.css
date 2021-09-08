@@ -245,6 +245,11 @@
   flex: 1;
   margin-right: 70px;
 }
+.tableRefundCasesWrapper {
+  max-height: 350px;
+  overflow: auto;
+  overflow-x: hidden;
+}
 .reasonWrapper {
   display: flex;
   padding: 20px 0px;
